@@ -30,6 +30,10 @@ The DSH web interface ships with one plain look. This bundle adds an "Appearance
 2. **重启 DSH**，打开 **设置 → 外观**。
 3. 用 **壁纸文件夹** 按钮选目录，或直接使用自带默认壁纸；改动即时生效。
 
+![Home with a wallpaper and glass panels](docs/preview/home.jpg)
+
+![Appearance settings](docs/preview/settings.jpg)
+
 **For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
 
 ## Features

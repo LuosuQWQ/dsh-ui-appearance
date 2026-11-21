@@ -21,6 +21,10 @@ DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里�
 2. **重启 DSH**，打开 **设置 → 外观**。
 3. 用 **壁纸文件夹** 按钮选目录，或使用自带默认壁纸。
 
+![Home with a wallpaper and glass panels](docs/preview/home.jpg)
+
+![Appearance settings](docs/preview/settings.jpg)
+
 **给 agent。** 配置键、默认值与约束见 [AGENTS.md](AGENTS.md)。
 
 ## 功能

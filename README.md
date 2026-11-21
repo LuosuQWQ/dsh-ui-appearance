@@ -57,6 +57,10 @@ Wallpaper and glass effects are easy to add and easy to make a long session stut
 
 **2** Wallpaper source and the **壁纸文件夹** button: the page opens your folder instead of asking for a path, and shows decoded names. **3** Transparency, blur, mask and pointer parallax. **4** Sidebar opacity and auto-hide.
 
+![Pointer parallax: the wallpaper drifts with the cursor](docs/preview/parallax.gif)
+
+**Pointer parallax.** The wallpaper layer drifts against the pointer; the amplitude and easing are adjustable in Settings → Appearance. This is a real capture of the browser UI moving the cursor across the window.
+
 ## Features
 
 - **Wallpaper layer** behind the whole app: cover / contain / tile / stretch / auto sizing, opacity, blur and a color wash on top.

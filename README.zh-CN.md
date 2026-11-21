@@ -28,7 +28,9 @@ DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里�
 **安装。**
 1. 加进一个 DSH profile——桌面版：**设置 → 插件**；命令行：
    ```sh
-   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add @luosuqwq/dsh-ui-appearance
+# 或者从源码：
+git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
    dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
    ```
 2. **重启 DSH**，打开 **设置 → 外观**。

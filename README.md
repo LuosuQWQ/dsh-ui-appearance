@@ -28,7 +28,9 @@ Wallpaper and glass effects are easy to add and easy to make a long session stut
 **Install (EN).**
 1. Add the bundle to a DSH profile — Desktop: **Settings → Plugins**; CLI:
    ```sh
-   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add @luosuqwq/dsh-ui-appearance
+# or from source:
+git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
    dsh plugin --profile <profile> add link:<absolute-path>/dsh-ui-appearance
    ```
 2. Restart DSH. Open **Settings → Appearance (外观)**.
@@ -37,7 +39,9 @@ Wallpaper and glass effects are easy to add and easy to make a long session stut
 **安装（中文）。**
 1. 加进一个 DSH profile——桌面版：**设置 → 插件**；命令行：
    ```sh
-   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add @luosuqwq/dsh-ui-appearance
+# or from source:
+git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
    dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
    ```
 2. **重启 DSH**，打开 **设置 → 外观**。

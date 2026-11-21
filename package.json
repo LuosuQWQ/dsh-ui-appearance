@@ -36,7 +36,8 @@
     "README.md",
     "README.zh-CN.md",
     "LICENSE",
-    "package.json"
+    "package.json",
+    "AGENTS.md"
   ],
   "dsh": {
     "manifestVersion": 1,
@@ -50,5 +51,13 @@
   },
   "scripts": {
     "test": "node test/appearance-motion.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuosuQWQ/dsh-ui-appearance.git"
+  },
+  "homepage": "https://github.com/LuosuQWQ/dsh-ui-appearance#readme",
+  "bugs": {
+    "url": "https://github.com/LuosuQWQ/dsh-ui-appearance/issues"
   }
 }

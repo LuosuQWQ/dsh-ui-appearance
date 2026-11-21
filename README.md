@@ -6,6 +6,32 @@ English | [简体中文](README.zh-CN.md)
 
 The DSH web interface ships with one plain look. This bundle adds an "Appearance (外观)" page to Settings where you can put a wallpaper behind the app, make the conversation card, composer and settings panel translucent with a backdrop blur, tune the sidebar, and switch on a pointer-following parallax and an auto-hiding sidebar. It is a local UI bundle: the only server it talks to is your own DSH instance, serving your own images back to the browser.
 
+## Quick start / 快速开始
+
+**What it is (EN).** A DeepSeek Harness Web bundle that changes how DSH looks: wallpaper layer, translucent glass panels, composer and sidebar styling, pointer parallax and an auto-hiding sidebar. Everything runs locally; custom wallpapers are read from a folder you choose and served back to your own browser.
+
+**这是什么（中文）。** 一个改 DeepSeek Harness 外观的 Web 插件包：壁纸层、玻璃拟态面板、输入框与侧边栏样式、指针视差、自动隐藏侧边栏。全部在本地运行，自定义壁纸来自你指定的文件夹，只在你自己的浏览器里显示。
+
+**Install (EN).**
+1. Add the bundle to a DSH profile — Desktop: **Settings → Plugins**; CLI:
+   ```sh
+   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add link:<absolute-path>/dsh-ui-appearance
+   ```
+2. Restart DSH. Open **Settings → Appearance (外观)**.
+3. Pick a wallpaper folder with the **壁纸文件夹** button, or keep the bundled defaults. Everything applies live.
+
+**安装（中文）。**
+1. 加进一个 DSH profile——桌面版：**设置 → 插件**；命令行：
+   ```sh
+   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
+   ```
+2. **重启 DSH**，打开 **设置 → 外观**。
+3. 用 **壁纸文件夹** 按钮选目录，或直接使用自带默认壁纸；改动即时生效。
+
+**For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
+
 ## Features
 
 - **Wallpaper layer** behind the whole app: cover / contain / tile / stretch / auto sizing, opacity, blur and a color wash on top.

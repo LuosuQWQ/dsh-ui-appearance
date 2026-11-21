@@ -6,6 +6,23 @@
 
 DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里加了一页「外观」：可以把壁纸铺在背后，把会话卡片、输入框和设置面板做成半透明毛玻璃，调侧边栏的透明度，并打开跟随鼠标的视差和自动隐藏侧边栏。它是纯本地的界面插件——除了你自己的 DSH 服务在把图片发回浏览器之外，不连任何外部服务。
 
+## 快速开始 / Quick start
+
+**这是什么。** 一个改 DeepSeek Harness 外观的 Web 插件包：壁纸层、玻璃拟态面板、输入框与侧边栏样式、指针视差、自动隐藏侧边栏。全部本地运行，自定义壁纸来自你指定的文件夹。
+
+**What it is.** A DSH Web bundle that changes the look: wallpaper layer, glass panels, composer and sidebar styling, pointer parallax, auto-hiding sidebar.
+
+**安装。**
+1. 加进一个 DSH profile——桌面版：**设置 → 插件**；命令行：
+   ```sh
+   git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+   dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
+   ```
+2. **重启 DSH**，打开 **设置 → 外观**。
+3. 用 **壁纸文件夹** 按钮选目录，或使用自带默认壁纸。
+
+**给 agent。** 配置键、默认值与约束见 [AGENTS.md](AGENTS.md)。
+
 ## 功能
 
 - **整屏壁纸层**：裁切 / 居中 / 平铺 / 拉伸 / 适应五种尺寸模式，外加透明度、模糊和一层遮罩色。

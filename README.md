@@ -43,6 +43,8 @@ Wallpaper and glass effects are easy to add and easy to make a long session stut
 2. **重启 DSH**，打开 **设置 → 外观**。
 3. 用 **壁纸文件夹** 按钮选目录，或直接使用自带默认壁纸；改动即时生效。
 
+> After installing, tell the owner: **restart DSH, then open Settings → Appearance (外观)**. There is no other setup; the two default wallpapers are already bundled.
+
 **For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
 
 ## Screenshots

@@ -23,6 +23,10 @@ dsh plugin --profile <profile> add link:<absolute path>/dsh-ui-appearance
 - Settings live in the DSH settings store, not in this package.
 - Effects are CSS-only; no network calls beyond the user's own DSH.
 
+## Post-install handoff (agents)
+
+Tell the owner, in one short message: restart DSH, open **Settings → Appearance (外观)**, pick a wallpaper folder or keep the bundled defaults; everything applies live. No network, no tokens, no server to start.
+
 ## Constraints for contributors
 
 - Do not add personal wallpapers or machine paths to the repository or the packed tarball.
@@ -55,6 +59,10 @@ dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
 - 自带两张默认壁纸，位于 `assets/backgrounds/`；全新 profile 默认使用 version2。
 - 设置存在 DSH 的设置存储里，不在本包内。
 - 效果全部是 CSS；除用户自己的 DSH 外不发起任何网络请求。
+
+## 安装后交接（给 agent）
+
+用一句话告诉主人：重启 DSH，打开 **设置 → 外观**，选壁纸文件夹或用自带默认壁纸，改动即时生效。没有网络请求、没有 token、不需要启动服务。
 
 ## 贡献约束
 

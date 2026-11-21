@@ -11,7 +11,9 @@ A DeepSeek Harness Web bundle (`dsh-ui-appearance`). A Host half serves the conf
 ## Install
 
 ```sh
-git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+npm install @luosuqwq/dsh-ui-appearance
+
+
 dsh plugin --profile <profile> add link:<absolute path>/dsh-ui-appearance
 # restart DSH; Settings -> Appearance appears
 ```
@@ -48,7 +50,9 @@ Tell the owner, in one short message: restart DSH, open **Settings → Appearanc
 ## 安装
 
 ```sh
-git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
+npm install @luosuqwq/dsh-ui-appearance
+
+
 dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
 # 重启 DSH；设置里会出现「外观」
 ```
@@ -75,3 +79,4 @@ dsh plugin --profile <profile> add link:<本地绝对路径>/dsh-ui-appearance
 ```sh
 npm test
 ```
+

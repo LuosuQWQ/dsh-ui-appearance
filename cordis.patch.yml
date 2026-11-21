@@ -5,4 +5,4 @@
 # It used to sit in the profile patch layer, which made the switch a no-op.
 - insert:
     - id: dsh-ui-appearance
-      name: dsh-ui-appearance
+      name: @luosuqwq/dsh-ui-appearance

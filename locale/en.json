@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Appearance",
+    "description": "Paints a wallpaper behind the conversation with a parallax offset, turns panels into frosted glass, and lets the sidebar fade or auto-hide. Everything is adjustable in Settings → Appearance; drop images into the wallpaper folder to use your own."
+  }
+}

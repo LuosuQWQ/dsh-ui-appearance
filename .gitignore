@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+assets/backgrounds/*
+!assets/backgrounds/.gitkeep
+# 随包附带的默认壁纸（其余壁纸由使用者自行放入，不进仓库）
+!assets/backgrounds/花与大肥鱼 version1.png
+!assets/backgrounds/花与大肥鱼 version2.png

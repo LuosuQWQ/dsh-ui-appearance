@@ -1,0 +1,8 @@
+# This bundle owns its composition row. The Plugins page switch toggles bundle
+# membership (`dsh.profile.bundles`), and the per-row switch writes
+# `{ id, disabled }` into the profile patch — both only work when the row lives
+# in the bundle's own patch (that is what the page renders as `declaredRows`).
+# It used to sit in the profile patch layer, which made the switch a no-op.
+- insert:
+    - id: dsh-ui-appearance
+      name: dsh-ui-appearance

@@ -1,0 +1,54 @@
+{
+  "name": "dsh-ui-appearance",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Wallpapers with parallax, frosted-glass panels, sidebar auto-hide and chat styling, all adjustable from a Settings section.",
+  "author": "LuoSu <2681153600@qq.com>",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "theme",
+    "appearance",
+    "wallpaper",
+    "glassmorphism"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/host/index.js",
+  "exports": {
+    ".": "./lib/host/index.js",
+    "./client": "./lib/client/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets/backgrounds/花与大肥鱼 version1.png",
+    "assets/backgrounds/花与大肥鱼 version2.png",
+    "test",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "scripts": {
+    "test": "node test/appearance-motion.cjs"
+  }
+}

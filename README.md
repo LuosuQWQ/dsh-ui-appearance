@@ -53,7 +53,7 @@ Wallpaper and glass effects are easy to add and easy to make a long session stut
 
 ![Appearance settings](docs/preview/settings.jpg)
 
-**1** Wallpaper source and the **壁纸文件夹** button: the page opens your folder instead of asking for a path, and shows decoded names. **2** Transparency, blur, mask and pointer parallax. **3** Sidebar opacity and auto-hide.
+**2** Wallpaper source and the **壁纸文件夹** button: the page opens your folder instead of asking for a path, and shows decoded names. **3** Transparency, blur, mask and pointer parallax. **4** Sidebar opacity and auto-hide.
 
 ## Features
 

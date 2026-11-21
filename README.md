@@ -6,6 +6,19 @@ English | [简体中文](README.zh-CN.md)
 
 The DSH web interface ships with one plain look. This bundle adds an "Appearance (外观)" page to Settings where you can put a wallpaper behind the app, make the conversation card, composer and settings panel translucent with a backdrop blur, tune the sidebar, and switch on a pointer-following parallax and an auto-hiding sidebar. It is a local UI bundle: the only server it talks to is your own DSH instance, serving your own images back to the browser.
 
+![dsh-ui-appearance](docs/preview/hero.jpg)
+
+## Why this plugin
+
+Wallpaper and glass effects are easy to add and easy to make a long session stutter. This bundle keeps every effect out of the streaming hot path instead of re-rendering the shell on each token.
+
+| | dsh-ui-appearance | a naive wallpaper layer |
+| --- | --- | --- |
+| Long sessions | debounced full syncs, cheap light syncs, cached measurement, a tooltip observer that ignores its own mutations | re-layout on every streamed token |
+| Sources | a folder you pick, with decoded Chinese names; only images are served | paste a path |
+| Scope | conversation card, composer, settings panel and sidebar tuned separately | one global opacity |
+| Privacy | CSS only, served by your own DSH; no network, no CDN | often loads remote assets |
+
 ## Quick start / 快速开始
 
 **What it is (EN).** A DeepSeek Harness Web bundle that changes how DSH looks: wallpaper layer, translucent glass panels, composer and sidebar styling, pointer parallax and an auto-hiding sidebar. Everything runs locally; custom wallpapers are read from a folder you choose and served back to your own browser.
@@ -30,11 +43,17 @@ The DSH web interface ships with one plain look. This bundle adds an "Appearance
 2. **重启 DSH**，打开 **设置 → 外观**。
 3. 用 **壁纸文件夹** 按钮选目录，或直接使用自带默认壁纸；改动即时生效。
 
+**For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
+
+## Screenshots
+
 ![Home with a wallpaper and glass panels](docs/preview/home.jpg)
+
+**1** Wallpaper layer behind the whole app; the conversation card, composer and sidebar stay legible on top of it.
 
 ![Appearance settings](docs/preview/settings.jpg)
 
-**For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
+**1** Wallpaper source and the **壁纸文件夹** button: the page opens your folder instead of asking for a path, and shows decoded names. **2** Transparency, blur, mask and pointer parallax. **3** Sidebar opacity and auto-hide.
 
 ## Features
 

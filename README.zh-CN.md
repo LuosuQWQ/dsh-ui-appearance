@@ -24,7 +24,7 @@ DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里�
 
 ![输入框特写](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-composer.jpg)
 
-**输入框与卡片。** 毛玻璃底色和壁纸分开调，复杂图片上文字也不糊。
+**输入框。** 毛玻璃底色和壁纸分开调，复杂图片上输入的文字也不糊。
 
 ![侧边栏特写](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-sidebar.jpg)
 

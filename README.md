@@ -24,7 +24,7 @@ The DSH web interface ships with one plain look. This bundle adds an "Appearance
 
 ![Composer close-up](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-composer.jpg)
 
-**Composer and cards.** The frosted backing is tuned separately from the wallpaper, so text stays readable over a busy image.
+**Composer.** The frosted backing is tuned separately from the wallpaper, so the input text stays readable over a busy image.
 
 ![Sidebar close-up](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-sidebar.jpg)
 

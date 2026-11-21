@@ -6,7 +6,30 @@ English | [简体中文](README.zh-CN.md)
 
 The DSH web interface ships with one plain look. This bundle adds an "Appearance (外观)" page to Settings where you can put a wallpaper behind the app, make the conversation card, composer and settings panel translucent with a backdrop blur, tune the sidebar, and switch on a pointer-following parallax and an auto-hiding sidebar. It is a local UI bundle: the only server it talks to is your own DSH instance, serving your own images back to the browser.
 
-![dsh-ui-appearance](docs/preview/hero.jpg)
+![dsh-ui-appearance](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/hero.jpg)
+
+## Showcase
+
+![Pointer parallax: the wallpaper drifts with the cursor](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/parallax.gif)
+
+**Pointer parallax.** A real capture of the browser UI: the wallpaper layer drifts against the cursor; amplitude and easing are adjustable in Settings → Appearance.
+
+![Home with a wallpaper and glass panels](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/home.jpg)
+
+**The whole shell.** The wallpaper sits behind every panel; the conversation card, composer and sidebar stay legible on top of it.
+
+![Appearance settings](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/settings.jpg)
+
+**Settings → Appearance.** Wallpaper source and the **壁纸文件夹** button (opens your folder instead of asking for a path, decoded names), transparency / blur / mask / parallax sliders, and sidebar opacity plus auto-hide.
+
+![Composer close-up](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-composer.jpg)
+
+**Composer and cards.** The frosted backing is tuned separately from the wallpaper, so text stays readable over a busy image.
+
+![Sidebar close-up](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-sidebar.jpg)
+
+**Sidebar.** The wallpaper shows through at the chosen opacity; auto-hide is a single switch.
+
 
 ## Why this plugin
 
@@ -50,20 +73,6 @@ git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
 > After installing, tell the owner: **restart DSH, then open Settings → Appearance (外观)**. There is no other setup; the two default wallpapers are already bundled.
 
 **For agents.** See [AGENTS.md](AGENTS.md) for config keys, defaults and constraints.
-
-## Screenshots
-
-![Home with a wallpaper and glass panels](docs/preview/home.jpg)
-
-**1** Wallpaper layer behind the whole app; the conversation card, composer and sidebar stay legible on top of it.
-
-![Appearance settings](docs/preview/settings.jpg)
-
-**2** Wallpaper source and the **壁纸文件夹** button: the page opens your folder instead of asking for a path, and shows decoded names. **3** Transparency, blur, mask and pointer parallax. **4** Sidebar opacity and auto-hide.
-
-![Pointer parallax: the wallpaper drifts with the cursor](docs/preview/parallax.gif)
-
-**Pointer parallax.** The wallpaper layer drifts against the pointer; the amplitude and easing are adjustable in Settings → Appearance. This is a real capture of the browser UI moving the cursor across the window.
 
 ## Features
 
@@ -244,4 +253,5 @@ curl -s http://127.0.0.1:<port>/bg/config
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
 

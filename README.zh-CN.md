@@ -6,7 +6,30 @@
 
 DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里加了一页「外观」：可以把壁纸铺在背后，把会话卡片、输入框和设置面板做成半透明毛玻璃，调侧边栏的透明度，并打开跟随鼠标的视差和自动隐藏侧边栏。它是纯本地的界面插件——除了你自己的 DSH 服务在把图片发回浏览器之外，不连任何外部服务。
 
-![dsh-ui-appearance](docs/preview/hero.jpg)
+![dsh-ui-appearance](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/hero.jpg)
+
+## 外观一览
+
+![指针视差：壁纸随光标轻微漂移](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/parallax.gif)
+
+**指针视差。** 浏览器界面里真实录制的：壁纸层随光标轻微反向漂移，幅度与缓动在「设置 → 外观」里调。
+
+![壁纸与玻璃面板的首页](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/home.jpg)
+
+**整个界面。** 壁纸铺在所有面板后面；对话卡片、输入框、侧边栏仍保持清晰可读。
+
+![外观设置](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/settings.jpg)
+
+**设置 → 外观。** 壁纸来源与 **壁纸文件夹** 按钮（直接打开你的文件夹，中文名自动解码）、透明度/模糊/遮罩/视差滑杆、侧边栏透明度与自动隐藏。
+
+![输入框特写](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-composer.jpg)
+
+**输入框与卡片。** 毛玻璃底色和壁纸分开调，复杂图片上文字也不糊。
+
+![侧边栏特写](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/detail-sidebar.jpg)
+
+**侧边栏。** 壁纸按设定的透明度透出，自动隐藏一个开关。
+
 
 ## 为什么用它
 
@@ -39,20 +62,6 @@ git clone https://github.com/LuosuQWQ/dsh-ui-appearance.git
 > 装好后请告诉主人：**重启 DSH，然后打开「设置 → 外观」**。不需要其他配置，自带两张默认壁纸。
 
 **给 agent。** 配置键、默认值与约束见 [AGENTS.md](AGENTS.md)。
-
-## 截图
-
-![壁纸与玻璃面板的首页](docs/preview/home.jpg)
-
-**1** 整个应用背后的壁纸层；对话卡片、输入框和侧边栏仍然清晰可读。
-
-![外观设置](docs/preview/settings.jpg)
-
-**2** 壁纸来源与 **壁纸文件夹** 按钮：页面直接打开你的文件夹而不是让你填路径，中文名自动解码。**3** 透明度、模糊、遮罩与指针视差。**4** 侧边栏透明度与自动隐藏。
-
-![指针视差：壁纸随光标轻微漂移](docs/preview/parallax.gif)
-
-**指针视差。** 壁纸层会随光标轻微反向漂移，幅度与缓动可在「设置 → 外观」里调。这张 GIF 是浏览器界面里真实移动光标录制的。
 
 ## 功能
 
@@ -234,4 +243,5 @@ curl -s http://127.0.0.1:<port>/bg/config
 ## 许可证
 
 MIT，见 [LICENSE](LICENSE)。
+
 

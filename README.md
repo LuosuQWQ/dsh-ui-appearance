@@ -31,6 +31,10 @@ The DSH web interface ships with one plain look. This bundle adds an "Appearance
 **Sidebar.** The wallpaper shows through at the chosen opacity; auto-hide is a single switch.
 
 
+![The conversation area over a wallpaper](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/conversation.jpg)
+
+**Conversation area.** Messages, tool cards and the composer sit on the frosted card while the wallpaper stays visible around and through it.
+
 ## Why this plugin
 
 Wallpaper and glass effects are easy to add and easy to make a long session stutter. This bundle keeps every effect out of the streaming hot path instead of re-rendering the shell on each token.

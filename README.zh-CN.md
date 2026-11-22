@@ -31,6 +31,10 @@ DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里�
 **侧边栏。** 壁纸按设定的透明度透出，自动隐藏一个开关。
 
 
+![壁纸上的会话区效果](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/conversation.jpg)
+
+**会话区。** 消息、工具卡片和输入框落在毛玻璃卡片上，壁纸在四周和玻璃后面仍然可见。
+
 ## 为什么用它
 
 壁纸和玻璃效果容易加，也容易让长会话变卡。这个 bundle 的原则是：所有效果都离流式热路径远一点，而不是每来一个 token 就重排一次界面。

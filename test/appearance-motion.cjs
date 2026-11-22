@@ -226,6 +226,10 @@ if (hostDefaults && clientDefaults) {
   check("会话卡片也不用 contain:paint", !/\[data-phase="active"\][^}]*contain:paint/.test(style))
 }
 
+// 2026-11-23 反馈：弹层是半透明材质，壁纸透上来正文看不清。修法是把
+// [data-menu-material] 的材质层改成不透明并去掉 backdrop-filter。
+check("弹层材质改成不透明", source.includes("data-menu-material") && source.includes("backdrop-filter:none!important"))
+
 if (failed > 0) {
   console.log(`\n${failed} check(s) failed`)
   process.exit(1)

@@ -1,6 +1,6 @@
 English | [简体中文](README.zh-CN.md)
 
-# dsh-ui-appearance
+# Glaze
 
 > Wallpaper, glass panels and chat-box styling for the DeepSeek Harness web UI.
 

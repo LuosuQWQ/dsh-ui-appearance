@@ -1,6 +1,6 @@
 [English](README.md) | 简体中文
 
-# dsh-ui-appearance
+# 琉璃
 
 > 给 DeepSeek Harness 的网页界面换上壁纸、毛玻璃面板与聊天框样式。
 

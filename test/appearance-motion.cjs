@@ -217,6 +217,15 @@ if (hostDefaults && clientDefaults) {
   check("默认壁纸在两份 defaults 里都是 version2", hostDefaults.bgImage.includes("DEFAULT_WALLPAPER") && clientDefaults.bgImage.includes("DEFAULT_WALLPAPER"))
 }
 
+// 2026-11-23 反馈：「+」点开后菜单看不见。原因是输入框上的 contain:paint 会裁剪
+// 子元素并新建层叠上下文，把弹出的菜单压到会话滚动层下面（paint containment
+// 无法用 overflow:visible 覆盖）。这里静态盯住，别再写回去。
+{
+  const style = templateOf("const STYLE =")
+  check("输入框不用 contain:paint（会裁掉弹出菜单）", !/\[data-dsh-appearance-composer\][^}]*contain:paint/.test(style))
+  check("会话卡片也不用 contain:paint", !/\[data-phase="active"\][^}]*contain:paint/.test(style))
+}
+
 if (failed > 0) {
   console.log(`\n${failed} check(s) failed`)
   process.exit(1)

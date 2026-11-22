@@ -30,6 +30,10 @@ The DSH web interface ships with one plain look. This bundle adds an "Appearance
 
 **Sidebar.** The wallpaper shows through at the chosen opacity; auto-hide is a single switch.
 
+![Sidebar auto-hide: it slides in when the cursor reaches the left edge and retracts when it leaves](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/sidebar-autohide.gif)
+
+**Auto-hide.** A real capture of the browser UI: once the cursor comes within 20 px of the left edge the sidebar slides back in over 220 ms, and it retracts along the same curve when the cursor leaves, without reflowing the conversation column.
+
 
 ![The conversation area over a wallpaper](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/conversation.jpg)
 

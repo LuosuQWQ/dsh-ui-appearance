@@ -30,6 +30,10 @@ DSH 的网页界面默认只有一套朴素外观。这个 bundle 在设置里�
 
 **侧边栏。** 壁纸按设定的透明度透出，自动隐藏一个开关。
 
+![侧边栏自动隐藏：光标靠近左边缘时滑出，移开后再收起](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/sidebar-autohide.gif)
+
+**自动隐藏。** 浏览器界面里真实录制的：光标进入距左边缘 20 px 的范围，侧边栏用 220 ms 滑回屏幕；光标移开就沿着同一条曲线收回，主内容区不跟着重排。
+
 
 ![壁纸上的会话区效果](https://raw.githubusercontent.com/LuosuQWQ/dsh-ui-appearance/main/docs/preview/conversation.jpg)
 

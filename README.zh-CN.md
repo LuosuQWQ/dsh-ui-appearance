@@ -238,6 +238,8 @@ curl -s http://127.0.0.1:<port>/bg/path
 curl -s http://127.0.0.1:<port>/bg/config
 ```
 
+每个 `/bg/*` 路由在碰磁盘之前都要过 Host 的准入检查（`ctx.connection.requestRejection`）：请求必须来自已认证的 DSH 客户端，所以不带浏览器那枚 `dsh-auth-*` cookie 的裸 `curl` 只会拿到 `401`。想手工试的话从开发者工具里把 cookie 抄出来，加 `-H 'cookie: dsh-auth-...=<value>'`。
+
 `/bg/list` 返回 `[{ url, name }]`（name 已解码），`/bg/path` 返回可写目录，`POST /bg/reveal` 用系统文件管理器打开它，`/bg/config` 返回已保存的设置——页面还没保存过时最后一个返回 404。
 
 | 路径 | 作用 |

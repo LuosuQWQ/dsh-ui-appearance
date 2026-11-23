@@ -248,6 +248,8 @@ curl -s http://127.0.0.1:<port>/bg/path
 curl -s http://127.0.0.1:<port>/bg/config
 ```
 
+Every `/bg/*` route runs the Host admission check (`ctx.connection.requestRejection`) before it touches the disk: a request has to come from an admitted DSH client, so a plain `curl` without the browser's `dsh-auth-*` cookie gets `401`. Add `-H 'cookie: dsh-auth-...=<value>'` copied from devtools when you want to poke at the routes by hand.
+
 `/bg/list` returns `[{ url, name }]` with the name decoded, `/bg/path` the writable folder, `POST /bg/reveal` opens it in the OS file manager, and `/bg/config` the stored settings — the last one answers 404 until the page has saved at least once.
 
 | Path | Role |
